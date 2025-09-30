@@ -1,96 +1,193 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Artisan coffee shop serving handcrafted beverages and fresh pastries in a cozy atmosphere">
-  <title>Brew & Bean - Artisan Coffee Shop</title>
-  
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="header-container">
-      <div class="logo">
-        <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M6 10C6 8.89543 6.89543 8 8 8H24C25.1046 8 26 8.89543 26 10V14C26 18.4183 22.4183 22 18 22H14C9.58172 22 6 18.4183 6 14V10Z" fill="currentColor"/>
-          <path d="M14 22V26C14 27.1046 14.8954 28 16 28C17.1046 28 18 27.1046 18 26V22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          <ellipse cx="16" cy="28" rx="4" ry="1" fill="currentColor"/>
-          <path d="M6 10C6 8 8 6 12 6C14 6 15 7 16 7C17 7 18 6 20 6C24 6 26 8 26 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
-        <span class="logo-text">Brew & Bean</span>
-      </div>
-      
-      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span class="hamburger"></span>
-      </button>
-      
-      <nav class="main-nav">
-        <ul class="nav-list">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Solstice Coffee — Light, Warm, Welcoming</title>
+    <meta name="description" content="Solstice Coffee — a light, elegant coffee shop with quality beans, cozy atmosphere, and fresh pastries." />
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-content">
-        <div class="hero-text">
-          <h1 class="hero-heading">Crafted with Care, Served with Love</h1>
-          <p class="hero-subheading">Experience the perfect blend of artisan coffee and cozy atmosphere. Every cup tells a story.</p>
-          <a href="#menu" class="cta-button">Explore Our Menu</a>
-        </div>
-        
-        <div class="hero-visual">
-          <div class="coffee-cup-illustration">
-            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Decorative coffee cup illustration">
-              <!-- Cup body -->
-              <path d="M50 80C50 75 55 70 60 70H140C145 70 150 75 150 80V130C150 145 140 155 125 155H75C60 155 50 145 50 130V80Z" fill="var(--accent-primary)" opacity="0.9"/>
-              
-              <!-- Cup handle -->
-              <path d="M150 90C150 90 165 90 165 105C165 120 150 120 150 120" stroke="var(--accent-primary)" stroke-width="8" stroke-linecap="round" opacity="0.9"/>
-              
-              <!-- Coffee surface -->
-              <ellipse cx="100" cy="80" rx="45" ry="8" fill="var(--accent-secondary)" opacity="0.7"/>
-              
-              <!-- Steam lines -->
-              <path d="M80 50C80 50 75 40 80 30" stroke="var(--accent-secondary)" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
-              <path d="M100 45C100 45 95 35 100 25" stroke="var(--accent-secondary)" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
-              <path d="M120 50C120 50 115 40 120 30" stroke="var(--accent-secondary)" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
-              
-              <!-- Saucer -->
-              <ellipse cx="100" cy="160" rx="60" ry="10" fill="var(--accent-primary)" opacity="0.5"/>
-            </svg>
+    <!-- Fonts: Poppins (headings) & Roboto (body) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Skip link for keyboard users -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a href="#" class="logo" aria-label="Solstice Coffee home">
+          <!-- Simple abstract cup logo (decorative) -->
+          <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+            <circle cx="32" cy="32" r="30" fill="var(--beige-200)"/>
+            <path d="M18 38c0 4 5 8 14 8s14-4 14-8v-8H18v8z" fill="var(--accent-200)"/>
+            <path d="M46 26h4a6 6 0 010 12h-4" fill="none" stroke="var(--accent-400)" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+          <span class="logo-type">Solstice Coffee</span>
+        </a>
+
+        <!-- Mobile nav toggle -->
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-controls="site-nav" aria-expanded="false">
+          <span class="nav-toggle-bars" aria-hidden="true"></span>
+        </button>
+
+        <nav id="site-nav" class="nav" role="navigation">
+          <ul class="nav-list" role="list">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">Who We Are</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact" class="btn btn-small">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <!-- Hero -->
+      <section class="hero" aria-label="Welcome">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1 class="hero-title">Coffee, Lightly</h1>
+            <p class="hero-subtitle">Warm mornings, airy spaces, and thoughtfully roasted beans to brighten your day.</p>
+            <div class="hero-cta">
+              <a href="#features" class="btn">Explore Our Coffee</a>
+              <a href="#contact" class="btn btn-ghost">Visit or Say Hello</a>
+            </div>
           </div>
-          
-          <!-- Decorative shapes -->
-          <div class="shape shape-circle"></div>
-          <div class="shape shape-blob"></div>
+          <!-- Decorative abstract imagery -->
+          <div class="hero-art" aria-hidden="true">
+            <div class="bean bean-a"></div>
+            <div class="bean bean-b"></div>
+            <div class="bean bean-c"></div>
+          </div>
         </div>
+      </section>
+
+      <!-- Our Features -->
+      <section id="features" class="section features" aria-labelledby="features-title">
+        <div class="container flow">
+          <h2 id="features-title">Our Features</h2>
+          <p class="section-lead">A few reasons regulars love spending time with us.</p>
+
+          <div class="features-grid">
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M6 19h8a4 4 0 004-4v-5H6v9z" fill="currentColor"/><path d="M18 10h1a3 3 0 010 6h-1" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+              </div>
+              <h3>Quality Beans</h3>
+              <p>Sourced seasonally and roasted with care for clean, balanced flavor.</p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 10a8 8 0 0116 0v8H4v-8z" fill="currentColor"/><path d="M2 18h20" stroke="currentColor" stroke-width="2"/></svg>
+              </div>
+              <h3>Cozy Atmosphere</h3>
+              <p>Sunlit corners, soft textures, and an easygoing soundtrack.</p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M5 12h14l-2 8H7l-2-8z" fill="currentColor"/><circle cx="9" cy="9" r="2" fill="currentColor"/><circle cx="15" cy="9" r="2" fill="currentColor"/></svg>
+              </div>
+              <h3>Fresh Pastries</h3>
+              <p>Daily bakes with gentle sweetness to pair with your cup.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Who We Are -->
+      <section id="about" class="section about" aria-labelledby="about-title">
+        <div class="container about-grid">
+          <div class="about-copy flow">
+            <h2 id="about-title">Who We Are</h2>
+            <p>We’re a small team of roasters, bakers, and hosts who believe coffee is best enjoyed in bright, welcoming spaces. Every detail—beans, water, pastry, playlist—is chosen to lift your mood.</p>
+            <p>Solstice began as a weekend pop-up and grew into a neighborhood spot where people read, write, and reconnect. We can’t wait to welcome you.</p>
+          </div>
+          <figure class="about-media">
+            <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1200&auto=format&fit=crop" alt="A bright cup of coffee on a light wooden table" loading="lazy" decoding="async" />
+            <figcaption class="visually-hidden">Bright coffee on a light wooden table</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section id="testimonials" class="section testimonials" aria-labelledby="testimonials-title">
+        <div class="container flow">
+          <h2 id="testimonials-title">Testimonials</h2>
+          <div class="testimonials-grid">
+            <blockquote class="quote-card">
+              <p>“Airy, calm, and the coffee is beautifully nuanced.”</p>
+              <cite>— Maya P.</cite>
+            </blockquote>
+            <blockquote class="quote-card">
+              <p>“My go-to place to think. Pastries are perfection.”</p>
+              <cite>— Jordan L.</cite>
+            </blockquote>
+            <blockquote class="quote-card">
+              <p>“Friendly team and consistently great espresso shots.”</p>
+              <cite>— Sam R.</cite>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section contact" aria-labelledby="contact-title">
+        <div class="container contact-grid">
+          <div class="contact-form flow">
+            <h2 id="contact-title">Contact Us</h2>
+            <p class="section-lead">Questions, events, or wholesale—send us a note.</p>
+
+            <form action="#" method="post" novalidate>
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required />
+              </div>
+
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required />
+              </div>
+
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+              </div>
+
+              <button type="submit" class="btn">Send Message</button>
+            </form>
+          </div>
+
+          <figure class="map" aria-labelledby="map-title">
+            <figcaption id="map-title" class="visually-hidden">Map placeholder for our location</figcaption>
+            <div class="map-placeholder" role="img" aria-label="Map placeholder"></div>
+            <p class="map-details">
+              123 Sunrise Ave, Suite 2B<br />
+              Open daily, 7:30am–5:00pm
+            </p>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-inner">
+        <small>© 2025 Solstice Coffee</small>
+        <nav aria-label="Footer">
+          <ul class="footer-nav" role="list">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </nav>
       </div>
-    </section>
-  </main>
+    </footer>
 
-  <footer class="site-footer">
-    <div class="footer-container">
-      <p class="copyright">&copy; 2025 Brew & Bean. All rights reserved.</p>
-      <nav class="footer-nav">
-        <a href="#privacy">Privacy</a>
-        <a href="#terms">Terms</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+    <script src="script.js" defer></script>
+  </body>
+  </html>

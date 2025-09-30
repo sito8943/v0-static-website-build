@@ -1,30 +1,49 @@
-# Static website build
+Create a responsive landing page (coffee shop theme) and output three separate files: index.html, styles.css, script.js.
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+Structure
+	•	Semantic HTML only: header, main, section, footer.
+	•	Header with site name/logo and simple nav.
+	•	Hero section: heading, subheading, call-to-action button.
+	•	After hero section, include:
+	1.	Our Features – showcase coffee shop highlights (quality beans, cozy atmosphere, fresh pastries).
+	2.	Who We Are – short description about the team/story.
+	3.	Testimonials – quotes from happy customers.
+	4.	Contact Section – simple contact form or contact details with a map placeholder.
+	•	Footer with copyright and minimal links.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/sitonumbis-projects/v0-static-website-build)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/GPIZ7WJTLNQ)
+Styling
+	•	Pure hand-written CSS only (no frameworks/libraries).
+	•	Use CSS variables (:root) for colors, fonts, spacing.
+	•	Light theme only — clean, airy, elegant.
+	•	Fluid typography with clamp().
+	•	Mobile-first media queries.
+	•	Flexbox and CSS Grid for layout.
+	•	Use logical properties (margin-inline, padding-block).
+	•	Smooth hover/focus transitions.
+	•	Minimal reset: * { box-sizing: border-box; margin:0; padding:0 }.
+	•	Accessible focus outlines and sufficient contrast.
+	•	Fonts: Poppins for headings, Roboto for body/links/buttons (via Google Fonts).
 
-## Overview
+Design Direction
+	•	Theme: coffee shop landing page, but light and elegant (not dark/coffee brown).
+	•	Color palette: muted, warm, soft tones (light beige, cream, muted green).
+	•	Style: minimalist, flat, friendly, inspirational.
+	•	Spacing: airy with plenty of white space.
+	•	Buttons/links: rounded soft edges.
+	•	Imagery: abstract coffee-inspired shapes or subtle illustrations.
+	•	Motion: smooth, subtle micro-interactions.
+	•	Layout personality: asymmetrical but balanced.
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+JavaScript
+	•	Vanilla JS only.
+	•	Minimal behavior: toggle mobile nav menu (with ARIA labels).
 
-## Deployment
+Accessibility
+	•	Proper alt text for images.
+	•	Semantic markup.
+	•	ARIA labels where needed.
+	•	Sufficient color contrast.
 
-Your project is live at:
-
-**[https://vercel.com/sitonumbis-projects/v0-static-website-build](https://vercel.com/sitonumbis-projects/v0-static-website-build)**
-
-## Build your app
-
-Continue building your app on:
-
-**[https://v0.app/chat/projects/GPIZ7WJTLNQ](https://v0.app/chat/projects/GPIZ7WJTLNQ)**
-
-## How It Works
-
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+Deliverable format
+	•	Return three separate code blocks: index.html, styles.css, and script.js.
+	•	Well-commented, clean, production-ready.
